@@ -44,10 +44,11 @@ packages:
   blue_thermal_printer:
     dependency: "direct main"
     description:
-      name: blue_thermal_printer
-      sha256: "2b8a93f90be335494d2172dbc869c31b95638087f89591b4ad69fd9305eaf80b"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: dba40e2d25dd119a3403de4e0984a7b88a0f2775
+      resolved-ref: dba40e2d25dd119a3403de4e0984a7b88a0f2775
+      url: "https://github.com/MillerAdulu/blue_thermal_printer"
+    source: git
     version: "1.2.3"
   boolean_selector:
     dependency: transitive
@@ -133,8 +134,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: d448869
-      resolved-ref: d448869c60981a2330e0987b843d470902e7a3c9
+      ref: eb44d2f84e9fa0d7b6a192c9f37326c628f26f6f
+      resolved-ref: eb44d2f84e9fa0d7b6a192c9f37326c628f26f6f
       url: "https://github.com/MillerAdulu/esc_pos_utils"
     source: git
     version: "1.1.0"
