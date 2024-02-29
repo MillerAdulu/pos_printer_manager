@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:blue_thermal_printer/blue_thermal_printer.dart' as themal;
+import 'package:esc_pos_utils/esc_pos_utils.dart';
 import 'package:pos_printer_manager/models/pos_printer.dart';
 import 'package:pos_printer_manager/pos_printer_manager.dart';
 import 'bluetooth_service.dart';
@@ -78,7 +79,7 @@ class BluetoothPrinterManager extends PrinterManager {
   /// [writeBytes] let you write raw list int data into socket
   @override
   Future<ConnectionResponse> writeBytes(List<int> data,
-      {bool isDisconnect: true}) async {
+      {bool isDisconnect = true}) async {
     try {
       if (!isConnected) {
         await connect();
